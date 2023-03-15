@@ -30,16 +30,13 @@ fetchNewsFunc() async {
   Response response = await get(Uri.parse('https://newsapi.org/v2/everything?q=bitcoin&apiKey=2b3c34d8bafc4b21a0fa19e67ae7244b'));
   Map data = jsonDecode(response.body);
 
-  var d=data['articles'].map((article)=>News.fromJson(article)).toList();
+  var dataFromApi=data['articles'].map((article)=>News.fromJson(article)).toList();
   
   print("loading");
   print(data['totalResults']);
   int count = data['totalResults'];
 
-  // status = data['status'];
-  // articles = data['articles'];
-  // totalResults = data['totalResults'];
-  return d;
+  return dataFromApi;
 
   }catch(e) {
     print(e);
