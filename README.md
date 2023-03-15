@@ -16,4 +16,4 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 ![An image here](images/first.png)
-<img src="images/second.png" float="left" width="45%"><img src="images/third.png" float="left" width="45%">
+<img src="images/second.png" float="left" width="45%" style="padding: 20px"><img src="images/third.png" float="left" width="45%" style="padding: 20px">
